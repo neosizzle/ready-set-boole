@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/junhan/42kl/ready-set-boole/benchmark/build/cmake_install.cmake",
+		"/Users/junhan/42kl/ready-set-boole/benchmark/build/src/cmake_install.cmake",
+		"/Users/junhan/42kl/ready-set-boole/benchmark/build/third_party/googletest/build/cmake_install.cmake",
+		"/Users/junhan/42kl/ready-set-boole/benchmark/build/third_party/googletest/build/googlemock/cmake_install.cmake",
+		"/Users/junhan/42kl/ready-set-boole/benchmark/build/third_party/googletest/build/googletest/cmake_install.cmake",
+		"/Users/junhan/42kl/ready-set-boole/benchmark/build/test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

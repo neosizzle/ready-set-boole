@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/junhan/42kl/ready-set-boole/benchmark/build/third_party/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
