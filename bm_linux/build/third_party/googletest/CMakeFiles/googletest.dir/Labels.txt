@@ -1,0 +1,14 @@
+# Target labels
+ googletest
+# Source files and their labels
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/CMakeFiles/googletest
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/CMakeFiles/googletest.rule
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/CMakeFiles/googletest-complete.rule
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/stamp/googletest-build.rule
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/stamp/googletest-configure.rule
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/stamp/googletest-download.rule
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/stamp/googletest-install.rule
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/stamp/googletest-mkdir.rule
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/stamp/googletest-patch.rule
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/stamp/googletest-test.rule
+/home/jng/42cursus/lmao/benchmark/build/third_party/googletest/stamp/googletest-update.rule

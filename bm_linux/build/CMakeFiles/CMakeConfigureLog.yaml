@@ -1,0 +1,1525 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 6.5.0-44-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/3.31.12/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-E2LUy3"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-E2LUy3"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-E2LUy3'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_54931/fast
+        /bin/gmake  -f CMakeFiles/cmTC_54931.dir/build.make CMakeFiles/cmTC_54931.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-E2LUy3'
+        Building CXX object CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o
+        /bin/c++   -v -MD -MT CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -c /home/jng/.local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 12.0.1-19ubuntu3
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /bin
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12
+        Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -dependency-file CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-E2LUy3 -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/jng/.local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 12.0.1 based upon LLVM 12.0.1 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/include"
+        ignoring duplicate directory "/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12
+         /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12
+         /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward
+         /usr/local/include
+         /usr/lib/llvm-12/lib/clang/12.0.1/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_54931
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54931.dir/link.txt --verbose=1
+        Ubuntu clang version 12.0.1-19ubuntu3
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /bin
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12
+        Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/bin/ld" --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_54931 /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/12/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/12 -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/12/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        /bin/c++  -v -Wl,-v CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_54931
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-E2LUy3'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12]
+          add: [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12]
+          add: [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward]
+          add: [/usr/local/include]
+          add: [/usr/lib/llvm-12/lib/clang/12.0.1/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12] ==> [/include/c++/12]
+        collapse include dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12] ==> [/include/x86_64-linux-gnu/c++/12]
+        collapse include dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward] ==> [/include/c++/12/backward]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/llvm-12/lib/clang/12.0.1/include] ==> [/usr/lib/llvm-12/lib/clang/12.0.1/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/include/c++/12;/include/x86_64-linux-gnu/c++/12;/include/c++/12/backward;/usr/local/include;/usr/lib/llvm-12/lib/clang/12.0.1/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-E2LUy3']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_54931/fast]
+        ignore line: [/bin/gmake  -f CMakeFiles/cmTC_54931.dir/build.make CMakeFiles/cmTC_54931.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-E2LUy3']
+        ignore line: [Building CXX object CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/bin/c++   -v -MD -MT CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -c /home/jng/.local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 12.0.1-19ubuntu3]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /bin]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -dependency-file CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-E2LUy3 -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/jng/.local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 12.0.1 based upon LLVM 12.0.1 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [ignoring duplicate directory "/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12]
+        ignore line: [ /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12]
+        ignore line: [ /bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/llvm-12/lib/clang/12.0.1/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_54931]
+        ignore line: [/home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54931.dir/link.txt --verbose=1]
+        ignore line: [Ubuntu clang version 12.0.1-19ubuntu3]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /bin]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/bin/ld" --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_54931 /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/12/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/12 -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/12/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+          arg [/bin/ld] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_54931] ==> ignore
+          arg [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crt1.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crt1.o]
+          arg [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
+          arg [/bin/../lib/gcc/x86_64-linux-gnu/12/crtbegin.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/12/crtbegin.o]
+          arg [-L/bin/../lib/gcc/x86_64-linux-gnu/12] ==> dir [/bin/../lib/gcc/x86_64-linux-gnu/12]
+          arg [-L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu]
+          arg [-L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64] ==> dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu/../../lib64] ==> dir [/usr/lib/x86_64-linux-gnu/../../lib64]
+          arg [-L/bin/../lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../..]
+          arg [-L/usr/lib/llvm-12/bin/../lib] ==> dir [/usr/lib/llvm-12/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_54931.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/bin/../lib/gcc/x86_64-linux-gnu/12/crtend.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/12/crtend.o]
+          arg [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /bin/ld
+        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crt1.o] ==> [/lib/x86_64-linux-gnu/crt1.o]
+        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> [/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/12/crtbegin.o] ==> [/lib/gcc/x86_64-linux-gnu/12/crtbegin.o]
+        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/12/crtend.o] ==> [/lib/gcc/x86_64-linux-gnu/12/crtend.o]
+        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/bin/../lib/gcc/x86_64-linux-gnu/12] ==> [/lib/gcc/x86_64-linux-gnu/12]
+        collapse library dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64] ==> [/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu/../../lib64] ==> [/usr/lib64]
+        collapse library dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../..] ==> [/lib]
+        collapse library dir [/usr/lib/llvm-12/bin/../lib] ==> [/usr/lib/llvm-12/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/lib/gcc/x86_64-linux-gnu/12/crtbegin.o;/lib/gcc/x86_64-linux-gnu/12/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/lib/gcc/x86_64-linux-gnu/12;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/lib;/usr/lib/llvm-12/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the CXX compiler's linker: "/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "CMakeLists.txt:141 (check_library_exists)"
+    checks:
+      - "Looking for shm_open in rt"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-A4x8cp"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-A4x8cp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_LIB_RT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-A4x8cp'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_2d8d4/fast
+        /bin/gmake  -f CMakeFiles/cmTC_2d8d4.dir/build.make CMakeFiles/cmTC_2d8d4.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-A4x8cp'
+        Building CXX object CMakeFiles/cmTC_2d8d4.dir/CheckFunctionExists.cxx.o
+        /bin/c++   -DCHECK_FUNCTION_EXISTS=shm_open -MD -MT CMakeFiles/cmTC_2d8d4.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_2d8d4.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_2d8d4.dir/CheckFunctionExists.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-A4x8cp/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_2d8d4
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d8d4.dir/link.txt --verbose=1
+        /bin/c++  -DCHECK_FUNCTION_EXISTS=shm_open CMakeFiles/cmTC_2d8d4.dir/CheckFunctionExists.cxx.o -o cmTC_2d8d4  -lrt
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-A4x8cp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:200 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALL"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-mEZ4IC"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-mEZ4IC"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-mEZ4IC'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_e820e/fast
+        /bin/gmake  -f CMakeFiles/cmTC_e820e.dir/build.make CMakeFiles/cmTC_e820e.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-mEZ4IC'
+        Building CXX object CMakeFiles/cmTC_e820e.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WALL  -Wall -std=c++17   -Wall -MD -MT CMakeFiles/cmTC_e820e.dir/src.cxx.o -MF CMakeFiles/cmTC_e820e.dir/src.cxx.o.d -o CMakeFiles/cmTC_e820e.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-mEZ4IC/src.cxx
+        Linking CXX executable cmTC_e820e
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e820e.dir/link.txt --verbose=1
+        /bin/c++   -Wall CMakeFiles/cmTC_e820e.dir/src.cxx.o -o cmTC_e820e
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-mEZ4IC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:201 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WEXTRA"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-nIFVfz"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-nIFVfz"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-nIFVfz'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_c4bb8/fast
+        /bin/gmake  -f CMakeFiles/cmTC_c4bb8.dir/build.make CMakeFiles/cmTC_c4bb8.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-nIFVfz'
+        Building CXX object CMakeFiles/cmTC_c4bb8.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WEXTRA  -Wall  -Wextra -std=c++17   -Wextra -MD -MT CMakeFiles/cmTC_c4bb8.dir/src.cxx.o -MF CMakeFiles/cmTC_c4bb8.dir/src.cxx.o.d -o CMakeFiles/cmTC_c4bb8.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-nIFVfz/src.cxx
+        Linking CXX executable cmTC_c4bb8
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4bb8.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra CMakeFiles/cmTC_c4bb8.dir/src.cxx.o -o cmTC_c4bb8
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-nIFVfz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:202 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHADOW"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-aDBGmE"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-aDBGmE"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHADOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-aDBGmE'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_bb05b/fast
+        /bin/gmake  -f CMakeFiles/cmTC_bb05b.dir/build.make CMakeFiles/cmTC_bb05b.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-aDBGmE'
+        Building CXX object CMakeFiles/cmTC_bb05b.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WSHADOW  -Wall  -Wextra  -Wshadow -std=c++17   -Wshadow -MD -MT CMakeFiles/cmTC_bb05b.dir/src.cxx.o -MF CMakeFiles/cmTC_bb05b.dir/src.cxx.o.d -o CMakeFiles/cmTC_bb05b.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-aDBGmE/src.cxx
+        Linking CXX executable cmTC_bb05b
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb05b.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow CMakeFiles/cmTC_bb05b.dir/src.cxx.o -o cmTC_bb05b
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-aDBGmE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:203 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6dM5kg"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6dM5kg"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WFLOAT_EQUAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6dM5kg'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_d59ad/fast
+        /bin/gmake  -f CMakeFiles/cmTC_d59ad.dir/build.make CMakeFiles/cmTC_d59ad.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6dM5kg'
+        Building CXX object CMakeFiles/cmTC_d59ad.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -Wall  -Wextra  -Wshadow  -Wfloat-equal -std=c++17   -Wfloat-equal -MD -MT CMakeFiles/cmTC_d59ad.dir/src.cxx.o -MF CMakeFiles/cmTC_d59ad.dir/src.cxx.o.d -o CMakeFiles/cmTC_d59ad.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6dM5kg/src.cxx
+        Linking CXX executable cmTC_d59ad
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d59ad.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal CMakeFiles/cmTC_d59ad.dir/src.cxx.o -o cmTC_d59ad
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6dM5kg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:204 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yTZ6H9"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yTZ6H9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yTZ6H9'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_28153/fast
+        /bin/gmake  -f CMakeFiles/cmTC_28153.dir/build.make CMakeFiles/cmTC_28153.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yTZ6H9'
+        Building CXX object CMakeFiles/cmTC_28153.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -std=c++17   -Wold-style-cast -MD -MT CMakeFiles/cmTC_28153.dir/src.cxx.o -MF CMakeFiles/cmTC_28153.dir/src.cxx.o.d -o CMakeFiles/cmTC_28153.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yTZ6H9/src.cxx
+        Linking CXX executable cmTC_28153
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28153.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast CMakeFiles/cmTC_28153.dir/src.cxx.o -o cmTC_28153
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yTZ6H9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:205 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCONVERSION"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-Fc2mrj"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-Fc2mrj"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCONVERSION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-Fc2mrj'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_689ec/fast
+        /bin/gmake  -f CMakeFiles/cmTC_689ec.dir/build.make CMakeFiles/cmTC_689ec.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-Fc2mrj'
+        Building CXX object CMakeFiles/cmTC_689ec.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WCONVERSION  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion -std=c++17   -Wconversion -MD -MT CMakeFiles/cmTC_689ec.dir/src.cxx.o -MF CMakeFiles/cmTC_689ec.dir/src.cxx.o.d -o CMakeFiles/cmTC_689ec.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-Fc2mrj/src.cxx
+        Linking CXX executable cmTC_689ec
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_689ec.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion CMakeFiles/cmTC_689ec.dir/src.cxx.o -o cmTC_689ec
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-Fc2mrj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:206 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WFORMAT_2"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-WBFTCv"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-WBFTCv"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WFORMAT_2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-WBFTCv'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_4bb50/fast
+        /bin/gmake  -f CMakeFiles/cmTC_4bb50.dir/build.make CMakeFiles/cmTC_4bb50.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-WBFTCv'
+        Building CXX object CMakeFiles/cmTC_4bb50.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WFORMAT_2  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2 -std=c++17   -Wformat=2 -MD -MT CMakeFiles/cmTC_4bb50.dir/src.cxx.o -MF CMakeFiles/cmTC_4bb50.dir/src.cxx.o.d -o CMakeFiles/cmTC_4bb50.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-WBFTCv/src.cxx
+        Linking CXX executable cmTC_4bb50
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bb50.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2 CMakeFiles/cmTC_4bb50.dir/src.cxx.o -o cmTC_4bb50
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-WBFTCv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:208 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WERROR"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-gGPpFE"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-gGPpFE"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WERROR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-gGPpFE'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_6bd5b/fast
+        /bin/gmake  -f CMakeFiles/cmTC_6bd5b.dir/build.make CMakeFiles/cmTC_6bd5b.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-gGPpFE'
+        Building CXX object CMakeFiles/cmTC_6bd5b.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WERROR  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror -std=c++17   -Werror -MD -MT CMakeFiles/cmTC_6bd5b.dir/src.cxx.o -MF CMakeFiles/cmTC_6bd5b.dir/src.cxx.o.d -o CMakeFiles/cmTC_6bd5b.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-gGPpFE/src.cxx
+        Linking CXX executable cmTC_6bd5b
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6bd5b.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror CMakeFiles/cmTC_6bd5b.dir/src.cxx.o -o cmTC_6bd5b
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-gGPpFE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:209 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dkNSFu"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dkNSFu"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dkNSFu'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_5d5ab/fast
+        /bin/gmake  -f CMakeFiles/cmTC_5d5ab.dir/build.make CMakeFiles/cmTC_5d5ab.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dkNSFu'
+        Building CXX object CMakeFiles/cmTC_5d5ab.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors -std=c++17   -pedantic-errors -MD -MT CMakeFiles/cmTC_5d5ab.dir/src.cxx.o -MF CMakeFiles/cmTC_5d5ab.dir/src.cxx.o.d -o CMakeFiles/cmTC_5d5ab.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dkNSFu/src.cxx
+        Linking CXX executable cmTC_5d5ab
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d5ab.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors CMakeFiles/cmTC_5d5ab.dir/src.cxx.o -o cmTC_5d5ab
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dkNSFu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:215 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-2VMYGO"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-2VMYGO"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-2VMYGO'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_19834/fast
+        /bin/gmake  -f CMakeFiles/cmTC_19834.dir/build.make CMakeFiles/cmTC_19834.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-2VMYGO'
+        Building CXX object CMakeFiles/cmTC_19834.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_PEDANTIC  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic -std=c++17   -pedantic -MD -MT CMakeFiles/cmTC_19834.dir/src.cxx.o -MF CMakeFiles/cmTC_19834.dir/src.cxx.o.d -o CMakeFiles/cmTC_19834.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-2VMYGO/src.cxx
+        Linking CXX executable cmTC_19834
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19834.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic CMakeFiles/cmTC_19834.dir/src.cxx.o -o cmTC_19834
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-2VMYGO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:216 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-BUvfii"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-BUvfii"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-BUvfii'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_5a275/fast
+        /bin/gmake  -f CMakeFiles/cmTC_5a275.dir/build.make CMakeFiles/cmTC_5a275.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-BUvfii'
+        Building CXX object CMakeFiles/cmTC_5a275.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32 -std=c++17   -Wshorten-64-to-32 -MD -MT CMakeFiles/cmTC_5a275.dir/src.cxx.o -MF CMakeFiles/cmTC_5a275.dir/src.cxx.o.d -o CMakeFiles/cmTC_5a275.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-BUvfii/src.cxx
+        Linking CXX executable cmTC_5a275
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a275.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32 CMakeFiles/cmTC_5a275.dir/src.cxx.o -o cmTC_5a275
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-BUvfii'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:217 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-oE8iJZ"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-oE8iJZ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_FSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-oE8iJZ'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_421d1/fast
+        /bin/gmake  -f CMakeFiles/cmTC_421d1.dir/build.make CMakeFiles/cmTC_421d1.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-oE8iJZ'
+        Building CXX object CMakeFiles/cmTC_421d1.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing -std=c++17   -fstrict-aliasing -MD -MT CMakeFiles/cmTC_421d1.dir/src.cxx.o -MF CMakeFiles/cmTC_421d1.dir/src.cxx.o.d -o CMakeFiles/cmTC_421d1.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-oE8iJZ/src.cxx
+        Linking CXX executable cmTC_421d1
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_421d1.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing CMakeFiles/cmTC_421d1.dir/src.cxx.o -o cmTC_421d1
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-oE8iJZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:220 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-rJwIxL"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-rJwIxL"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-rJwIxL'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_c9156/fast
+        /bin/gmake  -f CMakeFiles/cmTC_c9156.dir/build.make CMakeFiles/cmTC_c9156.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-rJwIxL'
+        Building CXX object CMakeFiles/cmTC_c9156.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++17   -Wno-deprecated-declarations -MD -MT CMakeFiles/cmTC_c9156.dir/src.cxx.o -MF CMakeFiles/cmTC_c9156.dir/src.cxx.o.d -o CMakeFiles/cmTC_c9156.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-rJwIxL/src.cxx
+        Linking CXX executable cmTC_c9156
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9156.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations CMakeFiles/cmTC_c9156.dir/src.cxx.o -o cmTC_c9156
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-rJwIxL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:233 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ck8Z8M"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ck8Z8M"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ck8Z8M'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_52725/fast
+        /bin/gmake  -f CMakeFiles/cmTC_52725.dir/build.make CMakeFiles/cmTC_52725.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ck8Z8M'
+        Building CXX object CMakeFiles/cmTC_52725.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++17   -Wno-deprecated -MD -MT CMakeFiles/cmTC_52725.dir/src.cxx.o -MF CMakeFiles/cmTC_52725.dir/src.cxx.o.d -o CMakeFiles/cmTC_52725.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ck8Z8M/src.cxx
+        Linking CXX executable cmTC_52725
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52725.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated CMakeFiles/cmTC_52725.dir/src.cxx.o -o cmTC_52725
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ck8Z8M'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:241 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dcyKpD"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dcyKpD"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dcyKpD'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_a8b7f/fast
+        /bin/gmake  -f CMakeFiles/cmTC_a8b7f.dir/build.make CMakeFiles/cmTC_a8b7f.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dcyKpD'
+        Building CXX object CMakeFiles/cmTC_a8b7f.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -std=c++17   -Wstrict-aliasing -MD -MT CMakeFiles/cmTC_a8b7f.dir/src.cxx.o -MF CMakeFiles/cmTC_a8b7f.dir/src.cxx.o.d -o CMakeFiles/cmTC_a8b7f.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dcyKpD/src.cxx
+        Linking CXX executable cmTC_a8b7f
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8b7f.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing CMakeFiles/cmTC_a8b7f.dir/src.cxx.o -o cmTC_a8b7f
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-dcyKpD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:245 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-XvYv3Q"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-XvYv3Q"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WTHREAD_SAFETY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-XvYv3Q'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_c521c/fast
+        /bin/gmake  -f CMakeFiles/cmTC_c521c.dir/build.make CMakeFiles/cmTC_c521c.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-XvYv3Q'
+        Building CXX object CMakeFiles/cmTC_c521c.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -std=c++17   -Wthread-safety -MD -MT CMakeFiles/cmTC_c521c.dir/src.cxx.o -MF CMakeFiles/cmTC_c521c.dir/src.cxx.o.d -o CMakeFiles/cmTC_c521c.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-XvYv3Q/src.cxx
+        Linking CXX executable cmTC_c521c
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c521c.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety CMakeFiles/cmTC_c521c.dir/src.cxx.o -o cmTC_c521c
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-XvYv3Q'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:58 (try_run)"
+      - "CMakeLists.txt:247 (cxx_feature_check)"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_THREAD_SAFETY_ATTRIBUTES"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_002ce/fast
+        /bin/gmake  -f CMakeFiles/cmTC_002ce.dir/build.make CMakeFiles/cmTC_002ce.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_002ce.dir/thread_safety_attributes.cpp.o
+        /bin/c++  -I/home/jng/42cursus/lmao/benchmark/include -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -MD -MT CMakeFiles/cmTC_002ce.dir/thread_safety_attributes.cpp.o -MF CMakeFiles/cmTC_002ce.dir/thread_safety_attributes.cpp.o.d -o CMakeFiles/cmTC_002ce.dir/thread_safety_attributes.cpp.o -c /home/jng/42cursus/lmao/benchmark/cmake/thread_safety_attributes.cpp
+        Linking CXX executable cmTC_002ce
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_002ce.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  CMakeFiles/cmTC_002ce.dir/thread_safety_attributes.cpp.o -o cmTC_002ce
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_THREAD_SAFETY_ATTRIBUTES"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:296 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_COVERAGE"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-EuRBUe"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-EuRBUe"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_COVERAGE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-EuRBUe'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_e86ef/fast
+        /bin/gmake  -f CMakeFiles/cmTC_e86ef.dir/build.make CMakeFiles/cmTC_e86ef.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-EuRBUe'
+        Building CXX object CMakeFiles/cmTC_e86ef.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_COVERAGE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage -std=c++17   --coverage -MD -MT CMakeFiles/cmTC_e86ef.dir/src.cxx.o -MF CMakeFiles/cmTC_e86ef.dir/src.cxx.o.d -o CMakeFiles/cmTC_e86ef.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-EuRBUe/src.cxx
+        Linking CXX executable cmTC_e86ef
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e86ef.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage CMakeFiles/cmTC_e86ef.dir/src.cxx.o -o cmTC_e86ef
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-EuRBUe'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:58 (try_run)"
+      - "CMakeLists.txt:320 (cxx_feature_check)"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_1a5da/fast
+        /bin/gmake  -f CMakeFiles/cmTC_1a5da.dir/build.make CMakeFiles/cmTC_1a5da.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_1a5da.dir/std_regex.cpp.o
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -MD -MT CMakeFiles/cmTC_1a5da.dir/std_regex.cpp.o -MF CMakeFiles/cmTC_1a5da.dir/std_regex.cpp.o.d -o CMakeFiles/cmTC_1a5da.dir/std_regex.cpp.o -c /home/jng/42cursus/lmao/benchmark/cmake/std_regex.cpp
+        Linking CXX executable cmTC_1a5da
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a5da.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  CMakeFiles/cmTC_1a5da.dir/std_regex.cpp.o -o cmTC_1a5da
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:58 (try_run)"
+      - "CMakeLists.txt:321 (cxx_feature_check)"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_GNU_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_f708b/fast
+        /bin/gmake  -f CMakeFiles/cmTC_f708b.dir/build.make CMakeFiles/cmTC_f708b.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_f708b.dir/gnu_posix_regex.cpp.o
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -MD -MT CMakeFiles/cmTC_f708b.dir/gnu_posix_regex.cpp.o -MF CMakeFiles/cmTC_f708b.dir/gnu_posix_regex.cpp.o.d -o CMakeFiles/cmTC_f708b.dir/gnu_posix_regex.cpp.o -c /home/jng/42cursus/lmao/benchmark/cmake/gnu_posix_regex.cpp
+        /home/jng/42cursus/lmao/benchmark/cmake/gnu_posix_regex.cpp:1:10: fatal error: 'gnuregex.h' file not found
+        #include <gnuregex.h>
+                 ^~~~~~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_f708b.dir/build.make:82: CMakeFiles/cmTC_f708b.dir/gnu_posix_regex.cpp.o] Error 1
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:134: cmTC_f708b/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RUN_HAVE_GNU_POSIX_REGEX"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:58 (try_run)"
+      - "CMakeLists.txt:322 (cxx_feature_check)"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_c3983/fast
+        /bin/gmake  -f CMakeFiles/cmTC_c3983.dir/build.make CMakeFiles/cmTC_c3983.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_c3983.dir/posix_regex.cpp.o
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -MD -MT CMakeFiles/cmTC_c3983.dir/posix_regex.cpp.o -MF CMakeFiles/cmTC_c3983.dir/posix_regex.cpp.o.d -o CMakeFiles/cmTC_c3983.dir/posix_regex.cpp.o -c /home/jng/42cursus/lmao/benchmark/cmake/posix_regex.cpp
+        Linking CXX executable cmTC_c3983
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3983.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  CMakeFiles/cmTC_c3983.dir/posix_regex.cpp.o -o cmTC_c3983
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:58 (try_run)"
+      - "CMakeLists.txt:331 (cxx_feature_check)"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_af8c5/fast
+        /bin/gmake  -f CMakeFiles/cmTC_af8c5.dir/build.make CMakeFiles/cmTC_af8c5.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_af8c5.dir/steady_clock.cpp.o
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -MD -MT CMakeFiles/cmTC_af8c5.dir/steady_clock.cpp.o -MF CMakeFiles/cmTC_af8c5.dir/steady_clock.cpp.o.d -o CMakeFiles/cmTC_af8c5.dir/steady_clock.cpp.o -c /home/jng/42cursus/lmao/benchmark/cmake/steady_clock.cpp
+        Linking CXX executable cmTC_af8c5
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af8c5.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  CMakeFiles/cmTC_af8c5.dir/steady_clock.cpp.o -o cmTC_af8c5
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:334 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ibR9Of"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ibR9Of"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ibR9Of'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_97dae/fast
+        /bin/gmake  -f CMakeFiles/cmTC_97dae.dir/build.make CMakeFiles/cmTC_97dae.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ibR9Of'
+        Building CXX object CMakeFiles/cmTC_97dae.dir/src.cxx.o
+        /bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -MD -MT CMakeFiles/cmTC_97dae.dir/src.cxx.o -MF CMakeFiles/cmTC_97dae.dir/src.cxx.o.d -o CMakeFiles/cmTC_97dae.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ibR9Of/src.cxx
+        Linking CXX executable cmTC_97dae
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97dae.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  CMakeFiles/cmTC_97dae.dir/src.cxx.o -o cmTC_97dae
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ibR9Of'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:58 (try_run)"
+      - "CMakeLists.txt:341 (cxx_feature_check)"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_a19ff/fast
+        /bin/gmake  -f CMakeFiles/cmTC_a19ff.dir/build.make CMakeFiles/cmTC_a19ff.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_a19ff.dir/pthread_affinity.cpp.o
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -MD -MT CMakeFiles/cmTC_a19ff.dir/pthread_affinity.cpp.o -MF CMakeFiles/cmTC_a19ff.dir/pthread_affinity.cpp.o.d -o CMakeFiles/cmTC_a19ff.dir/pthread_affinity.cpp.o -c /home/jng/42cursus/lmao/benchmark/cmake/pthread_affinity.cpp
+        Linking CXX executable cmTC_a19ff
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a19ff.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  CMakeFiles/cmTC_a19ff.dir/pthread_affinity.cpp.o -o cmTC_a19ff
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "build/third_party/googletest/src/CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/3.31.12/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "build/third_party/googletest/src/CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yf7sxF"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yf7sxF"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yf7sxF'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_41d30/fast
+        /bin/gmake  -f CMakeFiles/cmTC_41d30.dir/build.make CMakeFiles/cmTC_41d30.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yf7sxF'
+        Building C object CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o
+        /bin/cc   -v -MD -MT CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -c /home/jng/.local/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 12.0.1-19ubuntu3
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /bin
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12
+        Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -dependency-file CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yf7sxF -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -x c /home/jng/.local/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 12.0.1 based upon LLVM 12.0.1 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/include
+         /usr/lib/llvm-12/lib/clang/12.0.1/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_41d30
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41d30.dir/link.txt --verbose=1
+        Ubuntu clang version 12.0.1-19ubuntu3
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /bin
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12
+        Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/bin/ld" --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_41d30 /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/12/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/12 -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /bin/../lib/gcc/x86_64-linux-gnu/12/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        /bin/cc  -v -Wl,-v CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -o cmTC_41d30
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yf7sxF'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "build/third_party/googletest/src/CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/include]
+          add: [/usr/lib/llvm-12/lib/clang/12.0.1/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/llvm-12/lib/clang/12.0.1/include] ==> [/usr/lib/llvm-12/lib/clang/12.0.1/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/local/include;/usr/lib/llvm-12/lib/clang/12.0.1/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "build/third_party/googletest/src/CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yf7sxF']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_41d30/fast]
+        ignore line: [/bin/gmake  -f CMakeFiles/cmTC_41d30.dir/build.make CMakeFiles/cmTC_41d30.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yf7sxF']
+        ignore line: [Building C object CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/bin/cc   -v -MD -MT CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -c /home/jng/.local/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 12.0.1-19ubuntu3]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /bin]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -dependency-file CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-yf7sxF -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -x c /home/jng/.local/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 12.0.1 based upon LLVM 12.0.1 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/llvm-12/lib/clang/12.0.1/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_41d30]
+        ignore line: [/home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41d30.dir/link.txt --verbose=1]
+        ignore line: [Ubuntu clang version 12.0.1-19ubuntu3]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /bin]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/bin/ld" --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_41d30 /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/12/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/12 -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/12/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /bin/../lib/gcc/x86_64-linux-gnu/12/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+          arg [/bin/ld] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_41d30] ==> ignore
+          arg [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crt1.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crt1.o]
+          arg [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
+          arg [/bin/../lib/gcc/x86_64-linux-gnu/12/crtbegin.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/12/crtbegin.o]
+          arg [-L/bin/../lib/gcc/x86_64-linux-gnu/12] ==> dir [/bin/../lib/gcc/x86_64-linux-gnu/12]
+          arg [-L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu]
+          arg [-L/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64] ==> dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu/../../lib64] ==> dir [/usr/lib/x86_64-linux-gnu/../../lib64]
+          arg [-L/bin/../lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../..]
+          arg [-L/usr/lib/llvm-12/bin/../lib] ==> dir [/usr/lib/llvm-12/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_41d30.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/bin/../lib/gcc/x86_64-linux-gnu/12/crtend.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/12/crtend.o]
+          arg [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /bin/ld
+        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crt1.o] ==> [/lib/x86_64-linux-gnu/crt1.o]
+        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> [/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/12/crtbegin.o] ==> [/lib/gcc/x86_64-linux-gnu/12/crtbegin.o]
+        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/12/crtend.o] ==> [/lib/gcc/x86_64-linux-gnu/12/crtend.o]
+        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/bin/../lib/gcc/x86_64-linux-gnu/12] ==> [/lib/gcc/x86_64-linux-gnu/12]
+        collapse library dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64] ==> [/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu/../../lib64] ==> [/usr/lib64]
+        collapse library dir [/bin/../lib/gcc/x86_64-linux-gnu/12/../../..] ==> [/lib]
+        collapse library dir [/usr/lib/llvm-12/bin/../lib] ==> [/usr/lib/llvm-12/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/lib/gcc/x86_64-linux-gnu/12/crtbegin.o;/lib/gcc/x86_64-linux-gnu/12/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/lib/gcc/x86_64-linux-gnu/12;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/lib;/usr/lib/llvm-12/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "build/third_party/googletest/src/CMakeLists.txt:6 (project)"
+    message: |
+      Running the C compiler's linker: "/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "test/CMakeLists.txt:8 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_UNUSED_VARIABLE"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-kj765M"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-kj765M"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_UNUSED_VARIABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-kj765M'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_d824f/fast
+        /bin/gmake  -f CMakeFiles/cmTC_d824f.dir/build.make CMakeFiles/cmTC_d824f.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-kj765M'
+        Building CXX object CMakeFiles/cmTC_d824f.dir/src.cxx.o
+        /bin/c++ -DHAVE_CXX_FLAG_WNO_UNUSED_VARIABLE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable -std=c++17   -Wno-unused-variable -MD -MT CMakeFiles/cmTC_d824f.dir/src.cxx.o -MF CMakeFiles/cmTC_d824f.dir/src.cxx.o.d -o CMakeFiles/cmTC_d824f.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-kj765M/src.cxx
+        Linking CXX executable cmTC_d824f
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d824f.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable CMakeFiles/cmTC_d824f.dir/src.cxx.o -o cmTC_d824f
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-kj765M'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "test/CMakeLists.txt:33 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test BENCHMARK_HAS_O3_FLAG"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-DYFEaO"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-DYFEaO"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "BENCHMARK_HAS_O3_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-DYFEaO'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_d1b9c/fast
+        /bin/gmake  -f CMakeFiles/cmTC_d1b9c.dir/build.make CMakeFiles/cmTC_d1b9c.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-DYFEaO'
+        Building CXX object CMakeFiles/cmTC_d1b9c.dir/src.cxx.o
+        /bin/c++ -DBENCHMARK_HAS_O3_FLAG  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  -std=c++17   -O3 -MD -MT CMakeFiles/cmTC_d1b9c.dir/src.cxx.o -MF CMakeFiles/cmTC_d1b9c.dir/src.cxx.o.d -o CMakeFiles/cmTC_d1b9c.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-DYFEaO/src.cxx
+        Linking CXX executable cmTC_d1b9c
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1b9c.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  CMakeFiles/cmTC_d1b9c.dir/src.cxx.o -o cmTC_d1b9c
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-DYFEaO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/jng/.local/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "test/CMakeLists.txt:146 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test BENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG"
+    directories:
+      source: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-JHmFBK"
+      binary: "/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-JHmFBK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/bin/clang-scan-deps-12"
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jng/42cursus/lmao/benchmark/cmake/Modules;/home/jng/42cursus/lmao/benchmark/cmake"
+    buildResult:
+      variable: "BENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-JHmFBK'
+        
+        Run Build Command(s): /home/jng/.local/bin/cmake -E env VERBOSE=1 /bin/gmake -f Makefile cmTC_95f09/fast
+        /bin/gmake  -f CMakeFiles/cmTC_95f09.dir/build.make CMakeFiles/cmTC_95f09.dir/build
+        gmake[1]: Entering directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-JHmFBK'
+        Building CXX object CMakeFiles/cmTC_95f09.dir/src.cxx.o
+        /bin/c++ -DBENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  -std=c++17   -Werror=deprecated-declarations -MD -MT CMakeFiles/cmTC_95f09.dir/src.cxx.o -MF CMakeFiles/cmTC_95f09.dir/src.cxx.o.d -o CMakeFiles/cmTC_95f09.dir/src.cxx.o -c /home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-JHmFBK/src.cxx
+        Linking CXX executable cmTC_95f09
+        /home/jng/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95f09.dir/link.txt --verbose=1
+        /bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wformat=2  -Werror  -pedantic-errors  -pedantic  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -Wno-unused-variable  CMakeFiles/cmTC_95f09.dir/src.cxx.o -o cmTC_95f09
+        gmake[1]: Leaving directory '/home/jng/42cursus/lmao/benchmark/build/CMakeFiles/CMakeScratch/TryCompile-JHmFBK'
+        
+      exitCode: 0
+...
