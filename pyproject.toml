@@ -1,0 +1,11 @@
+[project]
+name = "ready-set-boole"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "kaleido>=1.5.2",
+    "matplotlib>=3.11.2",
+    "plotly>=7.1.0",
+]

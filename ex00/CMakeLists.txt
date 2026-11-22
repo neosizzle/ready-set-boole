@@ -8,8 +8,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(main)
 add_executable(main_bench)
-# include libelf installation on apple
-# TODO: add visualizer script
 if(APPLE)
 	include_directories(/opt/homebrew/include /opt/homebrew/include/libelf)
 	cmake_path(GET PROJECT_SOURCE_DIR PARENT_PATH PARENT_DIR)
@@ -32,6 +30,7 @@ endif()
 
 target_sources(main
 	PRIVATE
+	 	func.cpp
 		main.cpp
 	PUBLIC
 		FILE_SET HEADERS
@@ -43,6 +42,7 @@ target_sources(main
 
 target_sources(main_bench
 	PRIVATE
+		func.cpp
 		main_bench.cpp
 	PUBLIC
 		FILE_SET HEADERS

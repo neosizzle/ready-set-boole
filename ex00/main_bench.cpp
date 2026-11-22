@@ -9,7 +9,9 @@
 // Generate input data
 static std::vector<int> GenerateData(int n) {
     std::vector<int> data(n);
-    std::iota(data.begin(), data.end(), 1);
+    // std::iota(data.begin(), data.end(), 1);
+
+	std::iota(data.rbegin(), data.rend(), 1);
     return data;
 }
 
@@ -81,29 +83,24 @@ static void BM_BubbleSort(benchmark::State& state) {
 // Register benchmarks
 
 BENCHMARK(BM_Constant)
-    ->RangeMultiplier(2)
-    ->Range(128, 8192)
-    ->Complexity(benchmark::o1);
+    ->DenseRange(1024, 65536, 4096)
+    ->Complexity();
 
 BENCHMARK(BM_BinarySearch)
-    ->RangeMultiplier(2)
-    ->Range(128, 8192)
-    ->Complexity(benchmark::oLogN);
+    ->DenseRange(1024, 65536, 4096)
+    ->Complexity();
 
 BENCHMARK(BM_LinearSearch)
-    ->RangeMultiplier(2)
-    ->Range(128, 8192)
-    ->Complexity(benchmark::oN);
+    ->DenseRange(1024, 2048, 4096)
+    ->Complexity();
 
 BENCHMARK(BM_MergeSort)
-    ->RangeMultiplier(2)
-    ->Range(128, 8192)
-    ->Complexity(benchmark::oNLogN);
+    ->DenseRange(1024, 65536, 4096)
+    ->Complexity();
 
 BENCHMARK(BM_BubbleSort)
-    ->RangeMultiplier(2)
-    ->Range(128, 8192)
-    ->Complexity(benchmark::oNSquared);
+    ->DenseRange(128, 8192, 512)
+    ->Complexity();
 
 // Main
 BENCHMARK_MAIN();
